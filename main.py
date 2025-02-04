@@ -21,7 +21,7 @@ def calculate_integral(f):
         x = a + i*dx
         trapezium_area = calculate_trapezium_area(x, f)
         total += trapezium_area
-        data = {'n': i, 'x': x, 'f(x + dx/2)': f(x + dx/2), 'dx*f(x + dx/2)': f(x + dx/2)}
+        data = {'n': i, 'x': x, 'f(x + dx/2)': f(x + dx/2), 'dx*f(x + dx/2)': dx*f(x + dx/2)}
         table_str.append(data)
     return total
 
