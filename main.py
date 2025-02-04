@@ -41,4 +41,4 @@ for r in table_str:
 print('-'*85)
 
 
-print('Σ = ', result )
+print(f'Σ = {result:.{rf}f}' )
